@@ -5,8 +5,8 @@ const app = express();
 require('dotenv').config();
 
 const client = new TwitterLite({
-  consumer_key: "WkUyaDFNd3B0czNwWkxnc1lYMEU6MTpjaQ",
-  consumer_secret: "elI5A-YmCxb4T7iZvTTSKUZqumtPp0h5sQTjvxBgBQvz2p0q-5",
+  consumer_key: "Qe6E59Nl4ndF5qaSpKuFeXVWY",
+  consumer_secret: "SyauKkFNxDfJp9vLAusPTW2XKwWzwEHE7SdJfm9rsCsMmMq9ln",
 });
 
 app.get("/auth/twitter", async (req, res) => {
