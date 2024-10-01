@@ -4,10 +4,7 @@ const TwitterLite = require('twitter-lite');
 const app = express();
 require('dotenv').config();
 
-const client = new TwitterLite({
-  consumer_key: "Qe6E59Nl4ndF5qaSpKuFeXVWY",
-  consumer_secret: "SyauKkFNxDfJp9vLAusPTW2XKwWzwEHE7SdJfm9rsCsMmMq9ln",
-});
+
 
 app.get("/auth/twitter", async (req, res) => {
   try {
@@ -31,12 +28,7 @@ app.get("/auth/twitter/callback", async (req, res) => {
       oauth_token,
     });
 
-    const userClient = new TwitterLite({
-      consumer_key: "1841099357187424260ur_vi_jay",
-      consumer_secret: "****iRRL0z",
-      access_token_key: response.oauth_token,
-      access_token_secret: response.oauth_token_secret,
-    });
+    
 
     const user = await userClient.get("account/verify_credentials");
     res.send(`Welcome, ${user.name}!`);
