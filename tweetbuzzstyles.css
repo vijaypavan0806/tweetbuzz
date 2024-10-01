@@ -1,0 +1,174 @@
+header
+{
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    background-color: black;
+    border-bottom: 1px solid rgb(0, 179, 255);
+    box-shadow: 0px 20px 40px  rgba(0, 179, 255, 0.05);
+}
+body
+{
+    margin: 0px;
+    background-color: black;
+}
+header .headerlogo
+{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.logincontainer
+{
+    padding: 10px;
+    width: 30%;
+    margin-left: 34.5%;
+    margin-top: 150px;
+    border: 1px solid rgb(0, 179, 255);
+    border-radius: 15px;
+}
+.logincontainer p
+{
+    margin: 10px;
+    margin-left: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(0, 179, 255);
+    float: left;
+}
+.logincontainer button
+{
+    background-color: rgb(0, 179, 255);
+    height: 40px;
+    width: 24%;
+    margin-left: 38%;
+    border-radius: 25px;
+    margin-top: 15px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.logincontainer img
+{
+    float: left;
+    margin-top: 12px;
+}
+.logincontainer a
+{
+    color: white;
+    text-decoration: none;
+}
+header .userlogo
+{
+    float: right;
+    margin: 5px;
+    margin-right: 10px;
+}
+.user
+{
+    margin-top: 25px;
+    padding-left: 10px;
+    float: right;
+    margin-right: 20px;
+}
+nav
+{
+    
+    margin-top: 40px;
+    float: left;
+    font-size: 20px;
+    margin-left: 110px;
+}
+nav a
+{
+    padding: 6px;
+    padding-bottom: 9.5px;
+    text-decoration: none;
+    color: white;
+    margin-right: 45px;
+}
+nav a:hover, a
+{
+    color: rgb(0, 179, 255);
+    transition: 0.5s;
+}
+header p
+{
+    color: white;
+    float: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 12.5px;
+    margin-bottom: 15px;
+}
+.curpage
+{
+    border: 0.5px solid rgb(0, 179, 255);
+    border-radius: 20px;
+}
+.main
+{
+    margin: 20px;
+    border: 1px solid rgb(0, 179, 255);
+    width: 1238px;
+    height: 65vh;
+    margin-top: 50px;
+    border-radius: 25px 0px;
+}
+.newspanel
+{
+    overflow: hidden;
+}
+.scroll-container
+{
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+@keyframes scroll 
+{
+    0% 
+    {
+      transform: translateX(0);
+    }
+    100% 
+    {
+      transform: translateX(-100%);
+    }
+}
+.news
+{
+    flex: 0 0 21%;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 320px;
+    width: 250px;
+    float: left;
+}
+.newstitle 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.newscontent
+{
+    font-size: 15px;
+    color: white;
+    text-align: justify;
+}
+.seperation
+{
+    flex: 0 0 0.2%;
+    width: 1px;
+    background-color: rgb(0, 179, 255);
+    height: 280px;
+    margin-top: 35px;
+    float: left;
+    border-radius: 100px;
+}
+.news :hover
+{
+    color: rgb(143, 219, 252);
+}
